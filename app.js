@@ -1,16 +1,16 @@
 let image = [
     {
-        url:"/foto/headphone.png",
+        url:"./foto/headphone.png",
         size:"big",
         name:"headphone"
     },
     {
-        url:"/foto/laptop.png",
+        url:"./foto/laptop.png",
         size:"small",
         name:"laptop"
     },
     {
-        url:"/foto/komputer.png",
+        url:"./foto/komputer.png",
         size:"medium",
         name:"komputer"
     }
