@@ -1,0 +1,12 @@
+@media(max-width:800px)
+{
+    .top-section
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-section h1, .top-section p
+    {
+        margin-top: 20px;
+    }
+}
