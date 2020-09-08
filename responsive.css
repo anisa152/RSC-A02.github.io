@@ -25,3 +25,41 @@
         margin-top: 0;
     }
 }
+
+
+
+
+
+
+/* responisiv navbar by akmal adi */
+
+
+/* ukuran tablet */
+@media (max-width: 1000px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 110px;
+    }
+
+    .top-section h1,
+    .top-section p {
+        margin-top: 20px;
+    }
+}
+
+
+
+/* ukuran hp */
+@media (max-width: 670px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 110px;
+    }
+
+    .top-section h1,
+    .top-section p {
+        margin-top: 10px;
+    }
+}
