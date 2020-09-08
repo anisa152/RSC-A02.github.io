@@ -22,26 +22,25 @@ let image = [
 ]
 let totalItem = image.length;
 
-let i = 1;
+setInterval(() => {
+    i++;
+    if(i>=6){i=1};
+    document.querySelector(".jumbotron-img div img").src=image[i-1].url;
+}, 5000)
 
-function animReset()
-{
-    document.querySelector(".jumbotron-img div img").style.animation="none";
-    console.log("reset");
-}
+let i = 1;
 
 function next()
 {
-    document.querySelector(".jumbotron-img div img").style.animation="none";
     if(i<totalItem)
     {
         i++;
-
         document.querySelector(".jumbotron-img div img").src=image[i-1].url;
-        document.querySelector(".jumbotron-img div img").style.animation="slide 1s";
-        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="#00adb5"; 
     }
-    setTimeout(animReset(),2000);
+    else
+    {
+        i=1;
+    }
 }
 
 function previous()
@@ -50,6 +49,18 @@ function previous()
     {
         i-=1;
         document.querySelector(".jumbotron-img div img").src=image[i-1].url;
-        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="white";
+    }
+    else
+    {
+        i=6;
     }
 }
+
+let jamA=parseInt(document.querySelector(".timer span:nth-child(1)").textContent);
+let jamB=parseInt(document.querySelector(".timer span:nth-child(2)").textContent);
+let menitA=parseInt(document.querySelector(".timer span:nth-child(4)").textContent);
+let menitB=parseInt(document.querySelector(".timer span:nth-child(5)").textContent);
+let detikA=parseInt(document.querySelector(".timer span:nth-child(7)").textContent);
+let detikB=parseInt(document.querySelector(".timer span:nth-child(8)").textContent);
+
+
