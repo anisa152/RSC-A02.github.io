@@ -1,43 +1,55 @@
 let image = [
     {
-        url:"./foto/headphone.png",
-        size:"big",
+        url:"../foto/headphone.png",
         name:"headphone"
     },
     {
-        url:"./foto/laptop.png",
-        size:"small",
+        url:"../foto/laptop.png",
         name:"laptop"
     },
     {
-        url:"./foto/komputer.png",
-        size:"medium",
+        url:"../foto/komputer.png",
         name:"komputer"
+    },
+    {
+        url:"../foto/hp.png",
+        name:"hp"
+    },
+    {
+        url:"../foto/printer.png",
+        name:"printer"
     }
-    ]
-
+]
 let totalItem = image.length;
 
-let i = 0;
+let i = 1;
+
+function animReset()
+{
+    document.querySelector(".jumbotron-img div img").style.animation="none";
+    console.log("reset");
+}
 
 function next()
 {
-    if(i+1<totalItem)
+    document.querySelector(".jumbotron-img div img").style.animation="none";
+    if(i<totalItem)
     {
         i++;
-        document.querySelector(".jumbotron-img div img").src=image[i].url;
-        document.querySelector(".page-indicator").style.color="white"
-        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="#00adb5";
-        
+
+        document.querySelector(".jumbotron-img div img").src=image[i-1].url;
+        document.querySelector(".jumbotron-img div img").style.animation="slide 1s";
+        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="#00adb5"; 
     }
+    setTimeout(animReset(),2000);
 }
 
 function previous()
 {
-    if(i-1>-1)
+    if(i>-1)
     {
         i-=1;
-        document.querySelector(".jumbotron-img div img").src=image[i].url;
-        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="#00adb5";
+        document.querySelector(".jumbotron-img div img").src=image[i-1].url;
+        document.querySelector(`.page-indicator span:nth-child(${i})`).style.color="white";
     }
 }
