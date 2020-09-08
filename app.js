@@ -1,22 +1,22 @@
 let image = [
     {
-        url:"../foto/headphone.png",
+        url:"./foto/headphone.png",
         name:"headphone"
     },
     {
-        url:"../foto/laptop.png",
+        url:"./foto/laptop.png",
         name:"laptop"
     },
     {
-        url:"../foto/komputer.png",
+        url:"./foto/komputer.png",
         name:"komputer"
     },
     {
-        url:"../foto/hp.png",
+        url:"./foto/hp.png",
         name:"hp"
     },
     {
-        url:"../foto/printer.png",
+        url:"./foto/printer.png",
         name:"printer"
     }
 ]
