@@ -300,3 +300,29 @@ nav ul li a:hover {
 {
     display: none;
 }
+
+/* CSS by Anisa152 */
+
+.footer {
+  background-color: #2f5167;
+  
+  /* Gantikan color ke #fff */
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+  
+}
+
+.footer-logo {
+  font-size: 32px;
+  float: left;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}
+/* CSS by Anisa152 */
