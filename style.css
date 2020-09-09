@@ -174,9 +174,10 @@ nav ul li a {
     transition: 0.5s;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: lightgreen;
-    transform: translate(-5px, -5px);
+    transform: translateX(-5px);
+    transform: translateY(-5px);
     box-shadow: 5px 5px #00bca4;
 }
 
