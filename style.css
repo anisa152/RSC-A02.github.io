@@ -57,7 +57,7 @@ body
     display: block;
     width: 50%;
     max-width: 200px;
-    animation: slide 10s linear infinite;
+    transition: 3s;
 }
 
 .jumbotron-img div
@@ -144,6 +144,11 @@ body
 
 /* css by akmal adi */
 
+header
+{
+    position: sticky;
+}
+
 nav {
     display: flex;
     background-color: #00adb5;
@@ -171,13 +176,12 @@ nav ul li a {
     text-decoration: none;
     font-size: .9em;
     font-family: 'Poppins', sans-serif;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav ul li a:hover {
-    color: lightgreen;
-    transform: translateX(-5px);
-    transform: translateY(-5px);
+    color: rgb(36, 230, 36);
+    transform: translate(-15px -15px);
     box-shadow: 5px 5px #00bca4;
 }
 
@@ -240,7 +244,7 @@ nav ul li a:hover {
 
 .container 
 {
-  max-width: 1170px;
+  /* max-width: 1170px; */
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -285,3 +289,14 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 
+    
+.top-wrapper .container
+{
+    background: linear-gradient(rgba(123, 70, 26, 0.76),rgba(82, 55, 33, 0.62));
+    padding: 20px;
+}
+
+.nav-btn
+{
+    display: none;
+}
