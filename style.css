@@ -250,7 +250,7 @@ header
 
 .top-wrapper {
   padding: 200px 0 140px 0;
-  background: url("mockup-863469_1920.jpg");
+  background: url(mockup-863469_1920.jpg) !important;
   background-size: cover;
   background-position: center;
   color: #fffdf6;
