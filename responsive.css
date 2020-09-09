@@ -1,9 +1,7 @@
-@media(max-width:800px)
+@media(max-width:700px)
 {
     .top-section
     {
-        position: relative;
-        top: 120px;
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -38,7 +36,6 @@
     .top-section {
         flex-direction: column;
         align-items: center;
-        padding-top: 110px;
     }
 
     .top-section h1,
@@ -49,6 +46,7 @@
     .top-wrapper h1 {
         font-size: 32px;
     }
+
 }
 
 
@@ -58,7 +56,6 @@
     .top-section {
         flex-direction: column;
         align-items: center;
-        padding-top: 110px;
     }
 
     .top-section h1,
@@ -91,14 +88,23 @@
       display: none;
   }
 
-  nav ul
+  nav
   {
-      display: none;
+      height: 110px;
   }
 
-  .container
+  .logo
   {
-      background-color: rgba(100,100,100,0.8);
-      padding: 20px;
+      text-align: center;
+  }
+
+  nav ul
+  {
+      flex-direction: column;
+  }
+
+  .nav-btn
+  {
+      display: inline-block;
   }
 }
