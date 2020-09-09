@@ -145,7 +145,6 @@ body
 /* css by akmal adi */
 
 nav {
-    position: sticky;
     display: flex;
     background-color: #00adb5;
     justify-content: space-around;
@@ -234,6 +233,10 @@ nav ul li a:hover {
 .menu-toggle input:checked~span:nth-child(3) {
     opacity: 0;
     transform: scale(0);
+    
+header
+{
+    position: fixed;
 }
 /* CSS by akmal adi */
 
