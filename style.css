@@ -20,11 +20,11 @@
 {
     text-align: center;
     width: 100%;
-    height: 300px;
+    height: 400px;
     min-height: 189px;
     justify-content: space-evenly;
     display: flex;
-    background: linear-gradient(90deg,#393e46, #282d35);
+    background: linear-gradient(90deg,#0000009d,#3333338c, #2b2a2a8c);
     font-family: 'Poppins', sans-serif;
     color: white;
     
@@ -146,17 +146,19 @@ body
 
 header
 {
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 
 nav {
     display: flex;
-    background-color: #00adb5;
+    background: linear-gradient(90deg, #43434396,#43434394);
     justify-content: space-around;
     /* padding: 20px 0; */
     color: white;
     height: 50px;
     align-items: center;
+    z-index: 10;
 }
 
 nav .logo {
@@ -177,6 +179,7 @@ nav ul li a {
     font-size: .9em;
     font-family: 'Poppins', sans-serif;
     transition: 0.5s;
+    z-index: 10;
 }
 
 nav ul li a:hover {
@@ -292,11 +295,91 @@ nav ul li a:hover {
     
 .top-wrapper .container
 {
-    background: linear-gradient(rgba(123, 70, 26, 0.76),rgba(82, 55, 33, 0.62));
+    background: linear-gradient(rgba(123, 70, 26, 0.76),rgba(126, 126, 126, 0.62));
     padding: 20px;
 }
 
 .nav-btn
 {
     display: none;
+}
+
+/* Preloader */
+
+.preloader
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+}
+.loader{
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 1s ease;
+}
+
+.loader span{
+	font-family: sans-serif;
+	font-size: 24px;
+	color: rgba(255,255,255,.1);
+	display: inline-block;
+	transition: all .5s;
+	animation: animate 2s infinite;
+}
+
+.loader span:nth-child(1){
+	animation-delay: .1s;
+}
+.loader span:nth-child(2){
+	animation-delay: .2s;
+}
+.loader span:nth-child(3){
+	animation-delay: .3s;
+}
+.loader span:nth-child(4){
+	animation-delay: .4s;
+}
+.loader span:nth-child(5){
+	animation-delay: .5s;
+}
+.loader span:nth-child(6){
+	animation-delay: .6s;
+}
+.loader span:nth-child(7){
+	animation-delay: .7s;
+}
+
+@keyframes animate{
+	0%
+	{
+		color: rgba(255,255,255,.1);
+		transform: translateY(0);
+		margin-left: 0;
+	}
+	25%
+	{
+		color: yellow;
+		transform: translateY(-15px);
+		margin-left: 10px;
+		text-shadow: 0 15px 5px #000;
+	}
+
+	100%
+	{
+		color: rgba(255,255,255,.1);
+		transform: translateY(0);
+	}
+
+}
+
+.preload-finish
+{
+    opacity: 0;
+    pointer-events: none;
 }
