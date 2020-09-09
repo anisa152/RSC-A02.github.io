@@ -55,12 +55,3 @@ function previous()
         i=6;
     }
 }
-
-let jamA=parseInt(document.querySelector(".timer span:nth-child(1)").textContent);
-let jamB=parseInt(document.querySelector(".timer span:nth-child(2)").textContent);
-let menitA=parseInt(document.querySelector(".timer span:nth-child(4)").textContent);
-let menitB=parseInt(document.querySelector(".timer span:nth-child(5)").textContent);
-let detikA=parseInt(document.querySelector(".timer span:nth-child(7)").textContent);
-let detikB=parseInt(document.querySelector(".timer span:nth-child(8)").textContent);
-
-
