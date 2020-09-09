@@ -300,3 +300,22 @@ nav ul li a:hover {
 {
     display: none;
 }
+
+/* CSS by Anisa152 */
+
+.footer{
+	background: #dcdedd;
+    min-height: 300px;
+    padding-top: 40px;
+}
+
+.footer-div{
+	margin-bottom: 30px;
+}
+
+.title-footer{
+	font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+ 
