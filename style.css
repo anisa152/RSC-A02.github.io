@@ -384,3 +384,27 @@ nav ul li a:hover {
     opacity: 0;
     pointer-events: none;
 }
+
+li{
+  list-style: none;
+}
+
+footer {
+  background-color: #00adb5;
+  padding: 40px ;
+  color: #fff;
+  height: 225px;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 30px;
+}
+
+footer li {
+  padding: 5px 0;
+}
