@@ -14,6 +14,8 @@
     height: 300px;
     min-width: 221px;
     max-width: 300px;
+    z-index: 0;
+    opacity: 1;
 }
 
 .top-section
@@ -132,6 +134,7 @@ body
     border-radius: 5px;
     opacity: 0.8;
     transition: 0.5s ease;
+    z-index: -1;
 } 
 
 .discount p
@@ -159,7 +162,7 @@ nav {
     color: white;
     height: 50px;
     align-items: center;
-    z-index: 10;
+    z-index: 1 !important;
 }
 
 nav .logo {
@@ -390,21 +393,121 @@ li{
 }
 
 footer {
-  background-color: #00adb5;
+  background-color: linear-gradient(90deg, #43434396,#43434394);
   padding: 40px ;
   color: #fff;
   height: 225px;
+  padding: 15px;
+}
+
+.footer-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-left {
-  float: left;
+  margin-top: 20px;
 }
 
 .footer-right {
-  float: right;
   margin-right: 30px;
+  margin-top: 20px;
+
 }
 
 footer li {
   padding: 5px 0;
+}
+
+
+.items
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.item
+{
+    position: relative;
+    width: 22%;
+    min-width: 200px;
+    height: 300px;
+    background: linear-gradient(60deg  ,#fff,#ddd, #aaa);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.item-img
+{
+    width: 40%;
+    height: auto;
+    
+}
+
+.input-btn
+{
+    background: none;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    transition: 0.5s ease;
+    border-radius: 4px;
+}
+
+.input-btn:hover
+{
+    color: black;
+    background: white;
+}
+
+.form
+{
+    margin-top: 5px;
+    margin-right: 15px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.footer-right ul li
+{
+    transition: 0.5s ease;
+    border-left: 2px solid rgba(0,0,0,0);
+    padding-left: 10px;
+}
+
+
+.footer-right ul li:hover
+{
+    transform: translateX(-10px);
+    cursor: pointer;
+    border-left: 2px solid white;
+}
+
+.more-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.more
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    transition: 0.5s;
+    display: inline-block;
+    padding: 15px;
 }
