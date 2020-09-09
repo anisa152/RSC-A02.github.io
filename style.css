@@ -170,6 +170,7 @@ nav ul li a {
     color: lavender;
     text-decoration: none;
     font-size: .9em;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a:hover {
