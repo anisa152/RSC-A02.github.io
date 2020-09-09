@@ -145,8 +145,7 @@ body
 /* css by akmal adi */
 
 nav {
-    position:fixed;
-    width: 100%;
+    position: sticky;
     display: flex;
     background-color: #00adb5;
     justify-content: space-around;
