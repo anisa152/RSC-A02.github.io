@@ -146,6 +146,7 @@ body
 
 nav {
     position:fixed;
+    width: 100%;
     display: flex;
     background-color: #00adb5;
     justify-content: space-around;
