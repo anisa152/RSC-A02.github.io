@@ -24,9 +24,9 @@
     min-height: 189px;
     justify-content: space-evenly;
     display: flex;
-    background: linear-gradient(90deg,#393e46, #282d35);
+    background: linear-gradient(90deg,#fff,#eee);
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: black;
     
 }
 
