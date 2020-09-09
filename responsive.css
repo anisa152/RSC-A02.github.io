@@ -45,6 +45,10 @@
     .top-section p {
         margin-top: 20px;
     }
+    
+    .top-wrapper h1 {
+        font-size: 32px;
+    }
 }
 
 
@@ -61,4 +65,24 @@
     .top-section p {
         margin-top: 10px;
     }
+    
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-wrapper {
+    background-position: center;
+    text-align: left;
+    padding-top: 180px;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
