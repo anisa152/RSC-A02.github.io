@@ -252,7 +252,7 @@ nav ul li a:hover {
 
 .top-wrapper {
   padding: 200px 0 140px 0;
-  background: url(mockup-863469_1920.jpg) !important;
+  background: url(mockup-863469_1920.jpg);
   background-size: cover;
   background-position: center;
   color: #fffdf6;
