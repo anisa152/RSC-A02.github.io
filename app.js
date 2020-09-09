@@ -55,3 +55,9 @@ function previous()
         i=6;
     }
 }
+
+window.addEventListener('load', ()=>{
+    let preloader = document.querySelector(".preloader");
+    preloader.classList.add("preload-finish");
+
+})
